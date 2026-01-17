@@ -5,3 +5,5 @@ if (addMoney) {
     console.log("Add money clicked");
   });
 } 
+
+

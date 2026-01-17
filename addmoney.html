@@ -31,13 +31,13 @@
     <!-- 6 box -->
     <div  class="grid grid-cols-3 gap-4 ml-4 mr-4">
       <div id="add-money"
-      class="border p-5 rounded-xl bg-slate-100 border-gray-100
-             cursor-pointer hover:bg-slate-200 transition">
+      class="border p-5 rounded-xl bg-blue-100 border-blue-700
+             cursor-pointer  transition">
         <img class="m-3 center" src="./assets/wallet1.png" alt="">
         <p>Add Money</p>
 
       </div>
-      <div  class="border p-5 rounded-xl bg-slate-100 border-gray-100
+      <div id="cash-out" class="border p-5 rounded-xl bg-slate-100 border-gray-100
       cursor-pointer hover:bg-slate-200 transition">
         <img class="m-3" src="./assets/send1.png" alt="">
         <p>Cash Out</p>
@@ -68,16 +68,43 @@
 
       </div>
     </div>
-    <!--Latest Payment-->
-    <div class="m-5 flex justify-between items-center ">
-      <h1 class="text-xl font-bold">Latest Payment</h1>
-      <p class="p-4 pb-2 text-xs opacity-60 tracking-wide ">View All</p>
-    </div>
+
+    <!-- Add Money -->
+     <h1 class="text-2xl m-5 font-bold">Add Money</h1>
+     <!--add money box-->
+     <div>
+      <div class="pl-8"> 
+          <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+            <form class="card-body">
+              <fieldset class="fieldset">
+                <label class="label">Select A Bank</label>
+                <select class="select">
+                  <option disabled selected>Select bank</option>
+                  <option>Bkash</option>
+                  <option>Nagad</option>
+                  <option>Akash</option>
+                </select>
+                <label class="label">Bank Account Number</label>
+                <input id="account-number" type="number" class="input" placeholder="Enter 11 digit account number" required/>
+                <label class="label">Amount to Add</label>
+                <input id="" type="number" class="input" placeholder="Add Amount to withdraw" required/>
+                <label class="label">Pin Number</label>
+                <input id="pin" type="text" class="input" placeholder="Enter 4 digit pin number" required/>
+                <div><a class="link link-hover">Forgot password?</a></div>    
+                <button id="login-btn" class="btn btn-info" mt-4">Add Money</button>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
+
+
   
 
   </section>
 
  <script src="./js/main.js"></script>
+ <script src="./js/cashout.js"></script>
 </body>
 
 </html>

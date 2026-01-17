@@ -11,12 +11,12 @@
 
 </head>
 
-<body class="bg-slate-800">
+<body class="bg-slate-800 h-full">
   <section class=" max-w-md min-h-screen mx-auto py-6 bg-gray-200 ">
   
     <nav>
     <!-- nav logo -->
-      <div class="mt-10 realtion justify-center justify-items-center">
+      <div class="mt-20 realtion justify-center justify-items-center">
         <img class="w-48 absolute" src="./assets/bg.png" alt="">
         <img class="w-18 mt-2 absolute" src="./assets/Group.png" alt="">
   
@@ -28,10 +28,10 @@
               <form class="card-body">
                 <fieldset class="fieldset">
                   <label class="label">Account Number</label>
-                  <input type="email" class="input" placeholder="Account Number" required/>
+                  <input id="account-number" type="number" class="input" placeholder="Account Number" required/>
                   <label class="label">Pin</label>
-                  <input type="text" class="input" placeholder="Enter Your Pin" required/>
-                  <div><a class="link link-hover">Forgot password?</a></div>
+                  <input id="pin" type="text" class="input" placeholder="Enter Your Pin" required/>
+                  <div><a class="link link-hover">Forgot password?</a></div>    
                   <button id="login-btn" class="btn btn-neutral mt-4">Login</button>
                 </fieldset>
               </form>

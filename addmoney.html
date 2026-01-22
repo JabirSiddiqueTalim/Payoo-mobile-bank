@@ -15,7 +15,7 @@
     <nav class="flex justify-around items-center">
       <img class="ml-3" src="./assets/Group.png" alt="">
       <div>
-        <h1 class="text-2xl font-bold text-center">$45000</h1>
+        <h1 class="text-2xl font-bold text-center">$ <span id="cash">45000</span></h1>
         <p>Available Balance</p>
       </div>
       <button class="btn ml-10 ">Log Out</button>
@@ -87,24 +87,21 @@
                 <label class="label">Bank Account Number</label>
                 <input id="account-number" type="number" class="input" placeholder="Enter 11 digit account number" required/>
                 <label class="label">Amount to Add</label>
-                <input id="" type="number" class="input" placeholder="Add Amount to withdraw" required/>
+                <input id="amount" type="number" class="input" placeholder="Add Amount to withdraw" required/>
                 <label class="label">Pin Number</label>
                 <input id="pin" type="text" class="input" placeholder="Enter 4 digit pin number" required/>
                 <div><a class="link link-hover">Forgot password?</a></div>    
-                <button id="login-btn" class="btn btn-info" mt-4">Add Money</button>
+                <button id="add-money-btn" class="btn btn-info mt-4">Add Money</button>
               </fieldset>
             </form>
           </div>
         </div>
       </div>
-
-
-  
-
   </section>
 
  <script src="./js/main.js"></script>
  <script src="./js/cashout.js"></script>
+
 </body>
 
 </html>

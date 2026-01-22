@@ -13,10 +13,24 @@ addMoneyBtn.addEventListener('click', function (event) {
   const convertCashMoney = parseFloat(cashMoney);
   const addAmount = document.getElementById('amount').value;
   const convertAddAmount = parseFloat(addAmount);
-  const sum = convertCashMoney + convertAddAmount;
-  document.getElementById('cash').innerText=sum;
 
-  console.log(sum);
+  const pin = document.getElementById('pin').value;
+  const convertPin = parseInt(pin);
+
+  if (pin) {
+    if (convertPin == 1234) {
+      const sum = convertCashMoney + convertAddAmount;
+      document.getElementById('cash').innerText = sum;
+
+    } else {
+      alert("Enter voild Pin")
+    }
+  }else
+  {
+    alert("Fullfill all info")
+  }
+
+ 
 
 })
 

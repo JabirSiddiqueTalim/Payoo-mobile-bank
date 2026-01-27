@@ -15,59 +15,37 @@
     <nav class="flex justify-around items-center">
       <img class="ml-3" src="./assets/Group.png" alt="">
       <div>
-        <h1 class="text-2xl font-bold text-center">$45000</h1>
-        <p>Available Balance</p>
+        <h1 class="text-2xl font-bold text-center">$ <span id="cash">45000</span></h1>
+        <p class="">Available Balance</p>
       </div>
-      <button class="btn ml-10 ">Log Out</button>
+      <button class="btn btn-info  ml-10 ">Log Out</button>
       <hr>
     </nav>
     <div class="mt-10">
-      <h1 class="text-2xl font-bold m-5">Welcome to Payooo!</h1>
-      <p class="m-5">Enjoy easy and convenient finacial services with us.
+      <h1 class="text-2xl font-bold m-5 text-sky-600">Welcome to Payooo!</h1>
+      <p class="ml-5 mb-5 label  text-sky-400">Enjoy easy and convenient finacial services with us.
         <br>
         Cashout charge is low .
       </p>
     </div>
-    <!-- 6 box -->
-    <div  class="grid grid-cols-3 gap-4 ml-4 mr-4">
-      <div id="add-money"
-      class="border p-5 rounded-xl bg-slate-100 border-gray-100
-             cursor-pointer hover:bg-slate-200 transition">
-        <img class="m-3 center" src="./assets/wallet1.png" alt="">
-        <p>Add Money</p>
-
-      </div>
-      <div id="cash-out" class="border p-5 rounded-xl bg-slate-100 border-gray-100
-      cursor-pointer hover:bg-slate-200 transition">
-        <img class="m-3" src="./assets/send1.png" alt="">
-        <p>Cash Out</p>
-
-      </div>
-      <div  class="border p-5 rounded-xl bg-slate-100 border-gray-100
-      cursor-pointer hover:bg-slate-200 transition">
-        <img class="m-3" src="./assets/money1.png" alt="">
-        <p>Transfer Money</p>
-
-      </div>
-      <div  class="border p-5 rounded-xl bg-slate-100 border-gray-100
-      cursor-pointer hover:bg-slate-200 transition">
-        <img class="m-3" src="./assets/bonus1.png" alt="">
-        <p>Get Bonus</p>
-
-      </div>
-      <div  class="border p-5 rounded-xl bg-slate-100 border-gray-100
-      cursor-pointer hover:bg-slate-200 transition">
-        <img class="m-3" src="./assets/purse1.png" alt="">
-        <p>Pay Bill</p>
-
-      </div>
-      <div  class="border p-5 rounded-xl bg-slate-100 border-gray-100
-      cursor-pointer hover:bg-slate-200 transition">
-        <img class="m-3" src="./assets/transaction1.png" alt="">
-        <p>Transacrions</p>
-
-      </div>
+    <!-- go to 6 box-->
+    <div
+  class="hero "
+  style="background-image: url(./E-Banking.jpg);"
+>
+  <div class="hero-overlay"></div>
+  <div class="hero-content text-neutral-content text-center">
+    <div class="max-w-md">
+      <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+      <p class="mb-5">
+        Send money, add balance, and track transactions instantly.
+        Fast, secure, and easy online banking at your fingertips.
+        Manage your money smarter with Payooo.
+      </p>
+      <button id="get-started" class="btn btn-primary">Get Started</button>
     </div>
+  </div>
+</div>
     <!--Latest Payment-->
     <div class="m-5 flex justify-between items-center ">
       <h1 class="text-xl font-bold">Latest Payment</h1>
@@ -172,7 +150,8 @@
   </section>
 
  <script src="./js/main.js"></script>
- <script src="./js/cashout.js"></script>
+ <script src="./js/toggle.js"></script>
+
 </body>
 
 </html>
